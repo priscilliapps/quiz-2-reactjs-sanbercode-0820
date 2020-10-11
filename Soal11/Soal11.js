@@ -15,14 +15,17 @@ function filterBooksPromise(colorful, amountOfPage) {
     })
 }
 
-function resultsOnBooks() {
-    filterBooksPromise
-        .then(function(fulfilled) {
-            console.log(fulfilled)
+var i = 0
+const resultsOnBooks = (colorful) => {
+    if (books[i]) {
+        filterBooksPromise(colorful, books[i])
+        .then(amountOfPage) {
+            console.log(amountOfPage)
         })
-        .catch(function(error) {
+        .catch(amountOfPage) {
             console.log(error.message)
         })
+    }
 }
 
-resultsOnBooks()
+resultsOnBooks(colorful)
